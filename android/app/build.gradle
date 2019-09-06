@@ -102,7 +102,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.finder.gpstracking"
+        applicationId "com.face.ecommerce"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 11

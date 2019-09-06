@@ -1,4 +1,4 @@
-package com.finder.gpstracking;
+package com.face.ecommerce;
 
 import android.app.Application;
 
