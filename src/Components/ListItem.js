@@ -55,6 +55,8 @@ const ListItem = ({item, isShowAd}) => {
         formatTime = '5 days ago';
     }else if (delta < day * 7) {
         formatTime = '6 days ago';
+    } else {
+        formatTime = date.toLocaleDateString("en-us", options);
     }
 
     //Log the date to our web console.
@@ -65,8 +67,8 @@ const ListItem = ({item, isShowAd}) => {
             <Text style={{fontSize: item.size ? item.size : 20}}>{item.face && item.face}</Text>
             <View style={styles.bottomContainer}>
                 <Icon name='ios-time' size={20}/>
-                <Text style={{marginLeft: 10, marginRight: 20}}>{pastDate ? date.toLocaleDateString("en-us", options) : formatTime}</Text>
-                <Text>{item.price && formatMoney(item.price)}</Text>
+                <Text style={{marginLeft: 10, marginRight: 20}}>{formatTime}</Text>
+                <Text>${item.price && formatMoney(item.price)}</Text>
             </View>
         </View>
     )
