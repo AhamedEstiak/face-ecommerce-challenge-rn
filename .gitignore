@@ -25,6 +25,8 @@ project.xcworkspace
 package-lock.json
 *.keystore
 
+android/
+
 # Android/IntelliJ
 #
 build/
