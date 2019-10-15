@@ -6,4 +6,3 @@ export const productsPath = (page, limit, sort) => baseUrl + `/api/products?_pag
 
 
 
-s
